@@ -8,21 +8,28 @@ import UpdateProduct from './Component/Redux/Updateproduct';
 import {Link, Route, Routes} from "react-router-dom"
 import Test from './Component/Redux/Test';
 import Productlist from './Component/Redux/Productlist';
-
+import Contactus from './Component/Redux/Contactus';
+import Navbar1 from './Component/Redux/Navbar';
+import Dashbord from './Component/Redux/Dashbord';
+import Login from './Component/Redux/Login';
+import Register from './Component/Redux/Register';
 
 function App() {
  
   return (
     <div className="App">
+      <Navbar1/>
       <Link to={"/products"}>go to home</Link>
       <Routes>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/Register' element={<Register/>}/>
       <Route path='/detail/:id' element={<Test/>}/> 
       <Route path='/products' element={<Productlist/>}/>
+      <Route path='/Contactus' element={<Contactus/>}/>
+      <Route path='/Dashboard' element={<Dashbord/>}/>
       </Routes>
-    <Addprod/>
-
-
-
+    
+    
     </div>
   );
 }

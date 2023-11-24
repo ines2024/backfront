@@ -22,8 +22,7 @@ function Productlist() {
     <p>{e.description}</p>
     <br></br>
     <span>{e.price}</span>
-    <button onClick={()=>dispatch(DELETE(e._id))}>delete</button>
-    <UpdateProduct data={e}/>
+    
     <Link to={`/detail/${e._id}`}>go to detail</Link>
 
     </div>)

@@ -13,7 +13,7 @@ export const GET = () => async (dispatch) => {
 }
 export const Addproduct=(data)=>async(dispatch)=>{
     try {
-        const res=await axios.post("http://localhost:5667/product/post",data)
+        const res=await axios.post("/product/post",data)
         .then((res)=>dispatch(GET()))
     } catch (error) {
       console.log(error)  
@@ -22,7 +22,7 @@ export const Addproduct=(data)=>async(dispatch)=>{
 
 export const UPDATE = (id,data) => async (dispatch) => {
     try {
-        const res = await axios.put("http://localhost:5667/product/update/"+id,data)
+        const res = await axios.put("/product/update/"+id,data)
             .then((res) => dispatch(GET()))
     } catch (error) {
         console.log(error)
@@ -33,7 +33,7 @@ export const UPDATE = (id,data) => async (dispatch) => {
 
 export const DELETE = (id) => async (dispatch) => {
     try {
-        const res = await axios.delete("http://localhost:5667/product/delete/"+id)
+        const res = await axios.delete("/product/delete/"+id)
             .then((res) => dispatch(GET()))
     } catch (error) {
         console.log(error)
@@ -42,7 +42,7 @@ export const DELETE = (id) => async (dispatch) => {
 
 export const getbyid = (id) => async (dispatch) => {
     try {
-        const res = await axios.get("http://localhost:5667/product/get/"+id)
+        const res = await axios.get("/product/get/"+id)
             .then((res) => dispatch({type:ONEPRODUCT,payload:res.data.product}))
     } catch (error) {
         console.log(error)
