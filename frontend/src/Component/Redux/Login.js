@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import "./Login.css"
 function login() {
   return (
     <div><div className="login-box">

@@ -13,6 +13,9 @@ import Navbar1 from './Component/Redux/Navbar';
 import Dashbord from './Component/Redux/Dashbord';
 import Login from './Component/Redux/Login';
 import Register from './Component/Redux/Register';
+import Basket from './Component/Redux/Basket';
+import Success from './Component/Redux/Success';
+import Cancel from './Component/Redux/Cancel';
 
 function App() {
  
@@ -27,6 +30,10 @@ function App() {
       <Route path='/products' element={<Productlist/>}/>
       <Route path='/Contactus' element={<Contactus/>}/>
       <Route path='/Dashboard' element={<Dashbord/>}/>
+      <Route path='/Basket' element={<Basket/>}/>
+      <Route path='/Success' element={<Success/>}/>
+      <Route path='/Cancel' element={<Cancel/>}/>
+
       </Routes>
     
     
