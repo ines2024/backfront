@@ -16,6 +16,7 @@ function Navbar1() {
             <Nav.Link href="/Contactus">Contact us</Nav.Link>
             <Nav.Link href="Login">Login</Nav.Link>
             <Nav.Link href="Register">Register</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
             <Link to ="/Basket">go to basket {basket.length}</Link>
           </Nav>
         </Container>

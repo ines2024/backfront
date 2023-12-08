@@ -16,6 +16,7 @@ import Register from './Component/Redux/Register';
 import Basket from './Component/Redux/Basket';
 import Success from './Component/Redux/Success';
 import Cancel from './Component/Redux/Cancel';
+import Contact from './Component/Redux/Contact';
 
 function App() {
  
@@ -33,7 +34,7 @@ function App() {
       <Route path='/Basket' element={<Basket/>}/>
       <Route path='/Success' element={<Success/>}/>
       <Route path='/Cancel' element={<Cancel/>}/>
-
+      <Route path='/Contact' element={<Contact/>}/>
       </Routes>
     
     
